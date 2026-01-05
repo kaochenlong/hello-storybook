@@ -1,4 +1,12 @@
 import "../src/tailwind.css"
+import { setup } from "@storybook/vue3"
+import { createPinia } from "pinia"
+
+const pinia = createPinia()
+
+setup((app) => {
+  app.use(pinia)
+})
 
 /** @type { import('@storybook/vue3-vite').Preview } */
 const preview = {
