@@ -1,6 +1,15 @@
 <script setup>
 defineProps({
+  /** 標籤上顯示的文字 */
   label: String,
+  /**
+   * 標籤的樣式變體
+   * - default: 預設灰色
+   * - primary: 主要藍色
+   * - success: 成功綠色
+   * - warning: 警告黃色
+   * - danger: 危險紅色
+   */
   variant: {
     type: String,
     default: "default"
