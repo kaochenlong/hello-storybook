@@ -16,6 +16,9 @@ defineProps({
   }
 })
 
+/** 點擊標籤時觸發 */
+defineEmits(["click"])
+
 const variantClasses = {
   default: "bg-gray-200 text-gray-700",
   primary: "bg-blue-500 text-white",
@@ -27,8 +30,9 @@ const variantClasses = {
 
 <template>
   <span
-    class="inline-block px-2 py-1 text-sm rounded"
+    class="inline-block px-2 py-1 text-sm rounded cursor-pointer"
     :class="variantClasses[variant]"
+    @click="$emit('click')"
   >
     {{ label }}
   </span>
