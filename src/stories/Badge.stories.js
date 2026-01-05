@@ -46,5 +46,18 @@ const Danger = {
   }
 }
 
+const BadgeGroup = {
+  render: () => ({
+    components: { Badge },
+    template: `
+      <div style="display: flex; gap: 8px;">
+        <Badge label="Vue" variant="success" />
+        <Badge label="React" variant="primary" />
+        <Badge label="Angular" variant="danger" />
+      </div>
+    `
+  })
+}
+
 export default meta
-export { Default, Primary, Success, Warning, Danger }
+export { Default, Primary, Success, Warning, Danger, BadgeGroup }
