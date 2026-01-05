@@ -9,7 +9,13 @@ const meta = {
       control: { type: "select" },
       options: ["default", "primary", "success", "warning", "danger"]
     }
-  }
+  },
+  decorators: [
+    (story) => ({
+      components: { story },
+      template: '<div style="padding: 20px; background: #f5f5f5;"><story /></div>'
+    })
+  ]
 }
 
 const Default = {
