@@ -3,6 +3,7 @@ import Badge from "./Badge.vue"
 const meta = {
   title: "Components/Badge",
   component: Badge,
+  tags: ["autodocs"],
   argTypes: {
     variant: {
       control: { type: "select" },
