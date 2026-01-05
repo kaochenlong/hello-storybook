@@ -30,10 +30,12 @@ const variantClasses = {
 
 <template>
   <span
-    class="inline-block px-2 py-1 text-sm rounded cursor-pointer"
+    class="inline-flex items-center gap-1 px-2 py-1 text-sm rounded cursor-pointer"
     :class="variantClasses[variant]"
     @click="$emit('click')"
   >
+    <!-- 標籤前方的圖示 -->
+    <slot name="icon"></slot>
     {{ label }}
   </span>
 </template>
