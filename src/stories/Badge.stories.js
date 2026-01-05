@@ -2,7 +2,13 @@ import Badge from "./Badge.vue"
 
 const meta = {
   title: "Components/Badge",
-  component: Badge
+  component: Badge,
+  argTypes: {
+    variant: {
+      control: { type: "select" },
+      options: ["default", "primary", "success", "warning", "danger"]
+    }
+  }
 }
 
 const Default = {
